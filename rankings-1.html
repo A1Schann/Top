@@ -1,1554 +1,356 @@
-﻿<!DOCTYPE html>
-<html class="no-js" lang="en-GB">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CS:GO Rankings Database | GosuGamers</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/app/site/favicon-08b6ed97.ico" sizes="16x16 32x32">
-    <meta name="description" content="Track the performance of CS:GO teams and players and see where they stand compared to others in the worldwide
-and regional rankings.">
-                <link rel="stylesheet" href="../assets/scripts/main.entry~466cc398-a6cfcd5f.chunk.css">
-    <link rel="stylesheet" href="../assets/22-1e47e832.chunk.css">
-            <script src="../v3/polyfill.min.js?features=Intl.DateTimeFormat.~locale.en-GB%2CIntl.getCanonicalLocales%2CIntl.ListFormat.~locale.en-GB%2CIntl.Locale%2CIntl.NumberFormat.~locale.en-GB%2CIntl.PluralRules.~locale.en-GB%2CIntl.RelativeTimeFormat.~locale.en-GB" defer=""></script>
-    <script src="../assets/scripts/runtime-8ebdabf3.js" defer=""></script>
-<script src="../assets/1-55ae6f07.js" defer=""></script>
-<script src="../assets/5-52684362.js" defer=""></script>
-<script src="../assets/4-b3e0dec1.js" defer=""></script>
-<script src="../assets/6-0cc8ac8a.js" defer=""></script>
-<script src="../assets/13-b8c2abec.js" defer=""></script>
-<script src="../assets/11-951d09d2.js" defer=""></script>
-<script src="../assets/16-82d4ece2.js" defer=""></script>
-<script src="../assets/15-74d25694.js" defer=""></script>
-<script src="../assets/10-8c0770a5.js" defer=""></script>
-<script src="../assets/scripts/main.entry~466cc398-7600a6d4.js" defer=""></script>
-    <script src="../assets/12-ff98dd21.js" defer=""></script>
-<script src="../assets/22-b9fe05b8.js" defer=""></script>
-<script src="../assets/scripts/rankings/rankings/index-single.entry~e2e93592-2125fc25.js" defer=""></script>
-                        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5KHJKG8');</script>
-                        <script>
-        (function () {
-            document.write('<div id="vmv3-ad-manager" style="display:none"></div>');
-            document.getElementById("vmv3-ad-manager").innerHTML =
-                '<iframe id="vmv3-frm" src="javascript:\'<html><body></body></html>\'" ' +
-                'width="0" height="0" data-mode="scan" data-site-id="59aeb9fb46e0fb0001a87d41"></iframe>';
-            var a = document.getElementById("vmv3-frm");
-            a = a.contentWindow ? a.contentWindow : a.contentDocument;
-            a.document.open();
-            a.document.write('<script src="https://hb.vntsm.com/v3/live/ad-manager.min.js" async>' + '</scr' + 'ipt>');
-            a.document.close();
-        })();
-    </script>
-                <script src="../pagead/js/f.txt" data-ad-client="ca-pub-9794582219774067" async=""></script>
-        <script src="../tag/js/gpt.js" async=""></script>
-    <script>
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-    </script>
-    <script>
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/1241540/SiteSkin', [[1,1],[1920,1200]], 'slot-6')
-.addService(googletag.pubads());
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link href="http://counter-strike.net/public/css/dangerzone.css?x=4&v=6515375&l=russian" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Quantico:400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quantico:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese" rel="stylesheet">
+	<title>CS:GO - Danger Zone</title>
+	<meta property="og:title" content="CS:GO - Danger Zone" />
+	<meta property="og:type" content="game" />
+	<meta property="og:url" content="http://www.counter-strike.net/dangerzone/" />
+	<meta property="og:image" content="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/dz_ogimage.png" />
+	<meta property="og:site_name" content="counter-strike.net" />
+	<meta property="fb:admins" content="726460592" />
+	<script src="http://media.steampowered.com/apps/dota2/javascript/static/jquery-1.7.1.min.js?v=252" type="text/javascript"></script>
+	<script src="http://media.steampowered.com/apps/dota2/javascript/static/jquery.cycle.all.js?v=252" type="text/javascript"></script>
 
-googletag.defineSlot('/1241540/Header', [[970,250],[970,90],[970,66],[728,90]], 'slot-1')
-.defineSizeMapping([[[1024,768],[[970,250],[728,90],[970,90],[970,66],[480,75],[480,60]]],[[730,100],[[728,90],[480,75],[480,60],[320,50],[300,100],[300,50]]],[[500,100],[[480,75],[480,60],[320,50],[300,100],[300,50]]],[[350,100],[[320,50],[300,100],[300,50]]],[[0,0],[[300,100],[300,50]]]])
-.addService(googletag.pubads());
+			
+	<script type="text/javascript">
 
-googletag.defineSlot('/1241540/BoxTop', [[300,600],[300,250]], 'slot-2')
-.addService(googletag.pubads());
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33822635-2']);
+		_gaq.push(['_setDomainName', 'counter-strike.net']);
+		_gaq.push(['_trackPageview']);
 
-googletag.defineSlot('/1241540/BoxBottom', [[300,600],[300,250],[160,600],[120,600]], 'slot-3')
-.addService(googletag.pubads());
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 
-googletag.defineSlot('/1241540/Footer', [[970,90],[970,66],[728,90]], 'slot-4')
-.defineSizeMapping([[[1024,768],[[728,90],[970,90],[970,66],[480,75],[480,60]]],[[730,100],[[728,90],[480,75],[480,60],[320,50],[300,100],[300,50]]],[[500,100],[[480,75],[480,60],[320,50],[300,100],[300,50]]],[[350,100],[[320,50],[300,100],[300,50]]],[[0,0],[[300,100],[300,50]]]])
-.addService(googletag.pubads());
+	</script>	
+	<script type="text/javascript">
 
-googletag.defineSlot('/1241540/FooterBox', [[300,250]], 'slot-5')
-.addService(googletag.pubads());
+        // sliders
+	$(
+		function()
+		{
+			$('#tablet_slider').cycle({
+				fx:     'fade', 
+				speed:   100, 
+				next:   '#tablet_slider_next', 
+				prev:   '#tablet_slider_prev', 
+				pause:   1,
+				pager:   0,
+				timeout: 4000
+			});
+		}
+    );
 
-            googletag.pubads().addEventListener('slotRenderEnded', 
-            function (evt) {
-                if (evt.slot.getAdUnitPath() === "/1241540/VCS_Desktop" && !evt.isEmpty) {
-                    document.getElementById("vcsContainer").classList.add("vcs-loaded");
-                }
-            }
-        );
-            googletag.pubads().enableSingleRequest();
-            googletag.pubads().collapseEmptyDivs(true);
-            googletag.pubads().setTargeting('UrlHost', "www.gosugamers.net");
-googletag.pubads().setTargeting('UrlPath', "\/counterstrike\/rankings");
-googletag.pubads().setTargeting('UrlQuery', [""]);
-googletag.pubads().setTargeting('UserAgeRange', "unknown");
-googletag.pubads().setTargeting('BoxTopExcludeX600', "no");
-googletag.pubads().setTargeting('BoxBottomExcludeX600', "no");
-googletag.pubads().setTargeting('GgVersion', "v3");
+    $(
+        function()
+		{
+			$('#mission_slider').cycle({
+				fx:     'fade', 
+				speed:   100, 
+				next:   '#mission_slider_next', 
+				prev:   '#mission_slider_prev', 
+				pause:   1,
+				pager:   0,
+				timeout: 4000
+			});
+		}
+	);
 
-            googletag.enableServices();
-        });
+    $(
+        function()
+		{
+			$('#dzcase_slider').cycle({
+				fx:     'fade', 
+				speed:   200, 
+				next:   '#dzcase_slider_next', 
+				prev:   '#dzcase_slider_prev', 
+				pause:   1,
+				pager:   0,
+				timeout: 3500
+			});
+		}
+	);
+
     </script>
 </head>
 
-<body class="site-section-counterstrike ">
-            <noscript><iframe src="../ns.html?id=GTM-5KHJKG8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body>
+<div id="fb-root"></div>
+
+<div id="bg_01">
         
-        
-    <header class="header">
-        <div class="header-wrap grid-x">
-            <a class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <a class="logo cell" href="/">
-                <div class="g-logo">
-                    <div>
-                        <img src="../assets/images/app/site/logo/logo-gg-b6c6c4d6.png">
-                    </div>
-                </div>
-                                <div class="game" style="background-image:url('../assets/images/app/site/logo/logo-gosugamers-df89458c.png')">
-                    <img src="../assets/images/app/site/logo/logo-gosugamers-df89458c.png">
-                </div>
-            </a>
-            <nav class="menu cell shrink">
-                
-<ul class="main-menu" data-indicate-active="starts-with">
-    <li>
-        <a href="/">
-                        All esports        </a>
-    </li>
-    <li>
-        <a href="/dota2">
-                        Dota 2        </a>
-    </li>
-    <li>
-        <a href="/counterstrike">
-                        CS:GO        </a>
-    </li>
-    <li>
-        <a href="/lol">
-                        LoL        </a>
-    </li>
-    <li>
-        <a href="/overwatch">
-                        Overwatch        </a>
-    </li>
-    <li>
-        <a href="/starcraft2">
-                        StarCraft 2        </a>
-    </li>
-    <li>
-        <a href="/valorant">
-                        Valorant        </a>
-    </li>
-        <li>
-        <a href="/mobile-legends" class="has-new-ribbon">
-                        Mobile Legends            <span class="show-for-large new-site-section-ribbon">
-                New            </span>
-        </a>
-    </li>
-</ul>
-                <ul class="sub-menu" data-indicate-active="">
-    
-    <li><a href="/counterstrike/articles">Articles</a></li>
-    <li><a href="/counterstrike/tournaments">Tournaments</a></li>
-    <li><a href="/counterstrike/matches">Matches</a></li>
-    <li><a href="rankings-1.html">Rankings</a></li>
-    <li><a href="/counterstrike/streams">Streams</a></li>
-    <li><a href="/counterstrike/vods">VODs</a></li>
-
-    </ul>
-            </nav>
+    <div id="container_01">
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" id="freetoplaylink"><img src="http://media.steampowered.com/apps/tf2/toughbreak/images/trans.gif" width="200" height="200" style="z-index: 10;"></a>
+        <div class="content">
+            <video autoplay="" loop="" muted>
+            <source type="video/webm" src="http://media.steampowered.com/apps/csgo/images/dangerzone/dangerzone_web.webm">
+            <!--img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/dangerzone_web.jpg" title="Your browser does not support the <video> tag"-->
+            </video>
         </div>
-        <div class="user-menu grid-x hover-submenu">
-                        <a href="/login?from=%2Fcounterstrike%2Frankings" class="rounded green button">Login</a>
-                                </div>
-    </header>
-    <div id="page" class="gg-page">
-        <div class="responsive-menu">
-            <nav>
-                
-<ul class="main-menu" data-indicate-active="starts-with">
-    <li>
-        <a href="/">
-                        <span class="icon-general"></span>
-                        All esports        </a>
-    </li>
-    <li>
-        <a href="/dota2">
-                        <span class="icon-dota2"></span>
-                        Dota 2        </a>
-    </li>
-    <li>
-        <a href="/counterstrike">
-                        <span class="icon-counterstrike"></span>
-                        CS:GO        </a>
-    </li>
-    <li>
-        <a href="/lol">
-                        <span class="icon-lol"></span>
-                        LoL        </a>
-    </li>
-    <li>
-        <a href="/overwatch">
-                        <span class="icon-overwatch"></span>
-                        Overwatch        </a>
-    </li>
-    <li>
-        <a href="/starcraft2">
-                        <span class="icon-starcraft2"></span>
-                        StarCraft 2        </a>
-    </li>
-    <li>
-        <a href="/valorant">
-                        <span class="icon-valorant"></span>
-                        Valorant        </a>
-    </li>
-        <li>
-        <a href="/mobile-legends" class="has-new-ribbon">
-                        <span class="icon-mobile-legends"></span>
-                        Mobile Legends            <span class="show-for-large new-site-section-ribbon">
-                New            </span>
-        </a>
-    </li>
-</ul>
-                <ul class="sub-menu" data-indicate-active="">
-    
-    <li><a href="/counterstrike/articles">Articles</a></li>
-    <li><a href="/counterstrike/tournaments">Tournaments</a></li>
-    <li><a href="/counterstrike/matches">Matches</a></li>
-    <li><a href="rankings-1.html">Rankings</a></li>
-    <li><a href="/counterstrike/streams">Streams</a></li>
-    <li><a href="/counterstrike/vods">VODs</a></li>
-
-    </ul>
-            </nav>
-        </div>
-
-        <main class="main-wrap row">
-            <div class="large-15 columns">
-                <div class="module atf-horizontal row">
-                        <div id="headerWrapper" class="header-wrapper">
-            <div id="slot-1">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-1"); });
-        </script>
-    </div>
-    </div>
-                </div>
-            </div>
-
-                        
-                                    <div class="large-15 columns">
-                <div class="row">
-                    
-                </div>
-            </div>
-            
-            
-<div class="content large-15 columns">
-    <div class="row col-2-layout">
-        <div class="large-11 columns layout-12">
-            <div class="module rankings row">
-                <div class="page-header">
-                    <div class="large-3 columns">
-                        <div class="row">
-                            <h1>
-                                CS:GO Rankings                            </h1>
-                        </div>
-                    </div>
-                    <div class="large-9 columns">
-                        <div class="row">
-                            <ul class="tabs" data-load-target="#rankingsList">
-                                                                                                    <li class="tabs-title is-active">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="" class="js-region-button">
-                                            Global
-                                        </a>
-                                    </li>
-                                                                    <li class="tabs-title ">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="18" class="js-region-button">
-                                            South America
-                                        </a>
-                                    </li>
-                                                                    <li class="tabs-title ">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="42" class="js-region-button">
-                                            North America
-                                        </a>
-                                    </li>
-                                                                    <li class="tabs-title ">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="19" class="js-region-button">
-                                            Europe
-                                        </a>
-                                    </li>
-                                                                    <li class="tabs-title ">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="20" class="js-region-button">
-                                            CIS
-                                        </a>
-                                    </li>
-                                                                    <li class="tabs-title ">
-                                                                                <a href="/counterstrike/rankings/list" data-region-id="24" class="js-region-button">
-                                            Asia &amp; Oceania
-                                        </a>
-                                    </li>
-                                                            </ul>
-                        </div>
-                    </div>
-                </div>
-                                <div class="large-12 columns" id="rankingsList" data-scroll-into-view="" data-scroll-top="100">
-                    
-
-<div class="row">
-    <div class="large-6 columns">
-        <div class="row" data-load-target="#rankDetails">
-            <ul class="ranking-list">
-                                                                                                                                                                    <li class="rank-up is-active">
-                        <a href="rankings/team-details/14346-1.html">
-                            <span class="ranking">
-                                1
-                            </span>
-                                                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                            Gambit Esports
-                            <span class="elo">
-                                1515
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-unchanged ">
-                        <a href="rankings/team-details/7397-1.html">
-                            <span class="ranking">
-                                2
-                            </span>
-                                                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                            Natus Vincere
-                            <span class="elo">
-                                1371
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                3
-                            </span>
-                                                        <span class="flag flag-fr" title="France" data-tooltip="" tabindex="1"></span>
-
-                            G2 Esports
-                            <span class="elo">
-                                1324
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/18052">
-                            <span class="ranking">
-                                4
-                            </span>
-                                                        <span class="flag flag-dk" title="Denmark" data-tooltip="" tabindex="1"></span>
-
-                            Heroic
-                            <span class="elo">
-                                1299
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings/team-details/10561-1.html">
-                            <span class="ranking">
-                                5
-                            </span>
-                                                        <span class="flag flag-us" title="United States" data-tooltip="" tabindex="1"></span>
-
-                            Team Liquid
-                            <span class="elo">
-                                1279
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/7455">
-                            <span class="ranking">
-                                6
-                            </span>
-                                                        <span class="flag flag-xb" title="CIS" data-tooltip="" tabindex="1"></span>
-
-                            Virtus.pro
-                            <span class="elo">
-                                1272
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/13976">
-                            <span class="ranking">
-                                7
-                            </span>
-                                                        <span class="flag flag-dk" title="Denmark" data-tooltip="" tabindex="1"></span>
-
-                            Astralis
-                            <span class="elo">
-                                1263
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/7395-1.html">
-                            <span class="ranking">
-                                8
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            mousesports
-                            <span class="elo">
-                                1259
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/31232">
-                            <span class="ranking">
-                                9
-                            </span>
-                                                        <span class="flag flag-fr" title="France" data-tooltip="" tabindex="1"></span>
-
-                            Team Vitality
-                            <span class="elo">
-                                1238
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings/team-details/34628-1.html">
-                            <span class="ranking">
-                                10
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            OG
-                            <span class="elo">
-                                1235
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                11
-                            </span>
-                                                        <span class="flag flag-se" title="Sweden" data-tooltip="" tabindex="1"></span>
-
-                            Ninjas in Pyjamas
-                            <span class="elo">
-                                1226
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                12
-                            </span>
-                                                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                            Team Spirit
-                            <span class="elo">
-                                1222
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/23976">
-                            <span class="ranking">
-                                13
-                            </span>
-                                                        <span class="flag flag-br" title="Brazil" data-tooltip="" tabindex="1"></span>
-
-                            FURIA
-                            <span class="elo">
-                                1210
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/26322.html">
-                            <span class="ranking">
-                                14
-                            </span>
-                                                        <span class="flag flag-au" title="Australia" data-tooltip="" tabindex="1"></span>
-
-                            ORDER
-                            <span class="elo">
-                                1207
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/19832-1.html">
-                            <span class="ranking">
-                                15
-                            </span>
-                                                        <span class="flag flag-de" title="Germany" data-tooltip="" tabindex="1"></span>
-
-                            BIG
-                            <span class="elo">
-                                1203
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="/counterstrike/rankings/team-details/8604">
-                            <span class="ranking">
-                                16
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            compLexity Gaming
-                            <span class="elo">
-                                1194
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="/counterstrike/rankings/team-details/22715">
-                            <span class="ranking">
-                                17
-                            </span>
-                                                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                            forZe
-                            <span class="elo">
-                                1192
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                18
-                            </span>
-                                                        <span class="flag flag-au" title="Australia" data-tooltip="" tabindex="1"></span>
-
-                            Renegades
-                            <span class="elo">
-                                1169
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                19
-                            </span>
-                                                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                            EPG Family
-                            <span class="elo">
-                                1164
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                20
-                            </span>
-                                                        <span class="flag flag-ua" title="Ukraine" data-tooltip="" tabindex="1"></span>
-
-                            Akuma
-                            <span class="elo">
-                                1162
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings/team-details/7411.html">
-                            <span class="ranking">
-                                21
-                            </span>
-                                                        <span class="flag flag-fi" title="Finland" data-tooltip="" tabindex="1"></span>
-
-                            ENCE
-                            <span class="elo">
-                                1154
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                22
-                            </span>
-                                                        <span class="flag flag-pt" title="Portugal" data-tooltip="" tabindex="1"></span>
-
-                            sAw
-                            <span class="elo">
-                                1146
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                23
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            FunPlus Phoenix
-                            <span class="elo">
-                                1144
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/8612.html">
-                            <span class="ranking">
-                                24
-                            </span>
-                                                        <span class="flag flag-cn" title="China" data-tooltip="" tabindex="1"></span>
-
-                            TyLoo
-                            <span class="elo">
-                                1130
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/22977.html">
-                            <span class="ranking">
-                                25
-                            </span>
-                                                        <span class="flag flag-fi" title="Finland" data-tooltip="" tabindex="1"></span>
-
-                            HAVU Gaming
-                            <span class="elo">
-                                1130
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                26
-                            </span>
-                                                        <span class="flag flag-gb" title="United Kingdom" data-tooltip="" tabindex="1"></span>
-
-                            Endpoint
-                            <span class="elo">
-                                1126
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                27
-                            </span>
-                                                        <span class="flag flag-bg" title="Bulgaria" data-tooltip="" tabindex="1"></span>
-
-                            SKADE
-                            <span class="elo">
-                                1125
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                28
-                            </span>
-                                                        <span class="flag flag-us" title="United States" data-tooltip="" tabindex="1"></span>
-
-                            Extra Salt
-                            <span class="elo">
-                                1125
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings/team-details/34813-1.html">
-                            <span class="ranking">
-                                29
-                            </span>
-                                                        <span class="flag flag-cz" title="Czech Republic" data-tooltip="" tabindex="1"></span>
-
-                            SINNERS Esports
-                            <span class="elo">
-                                1118
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/20931.html">
-                            <span class="ranking">
-                                30
-                            </span>
-                                                        <span class="flag flag-cn" title="China" data-tooltip="" tabindex="1"></span>
-
-                            ViCi Gaming
-                            <span class="elo">
-                                1114
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings/team-details/36371.html">
-                            <span class="ranking">
-                                31
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            Entropiq
-                            <span class="elo">
-                                1103
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                32
-                            </span>
-                                                        <span class="flag flag-br" title="Brazil" data-tooltip="" tabindex="1"></span>
-
-                            GODSENT
-                            <span class="elo">
-                                1103
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                33
-                            </span>
-                                                        <span class="flag flag-pl" title="Poland" data-tooltip="" tabindex="1"></span>
-
-                            AGO
-                            <span class="elo">
-                                1100
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                34
-                            </span>
-                                                        <span class="flag flag-bg" title="Bulgaria" data-tooltip="" tabindex="1"></span>
-
-                            Team Fiend
-                            <span class="elo">
-                                1099
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                35
-                            </span>
-                                                        <span class="flag flag-de" title="Germany" data-tooltip="" tabindex="1"></span>
-
-                            Sprout
-                            <span class="elo">
-                                1092
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                36
-                            </span>
-                                                        <span class="flag flag-us" title="United States" data-tooltip="" tabindex="1"></span>
-
-                            Evil Geniuses
-                            <span class="elo">
-                                1092
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                37
-                            </span>
-                                                        <span class="flag flag-au" title="Australia" data-tooltip="" tabindex="1"></span>
-
-                            Dire Wolves
-                            <span class="elo">
-                                1088
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                38
-                            </span>
-                                                        <span class="flag flag-ar" title="Argentina" data-tooltip="" tabindex="1"></span>
-
-                            9z Team
-                            <span class="elo">
-                                1086
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/25206.html">
-                            <span class="ranking">
-                                39
-                            </span>
-                                                        <span class="flag flag-cn" title="China" data-tooltip="" tabindex="1"></span>
-
-                            Lynn Vision Gaming
-                            <span class="elo">
-                                1086
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                40
-                            </span>
-                                                        <span class="flag flag-fr" title="France" data-tooltip="" tabindex="1"></span>
-
-                            Double Poney
-                            <span class="elo">
-                                1086
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                41
-                            </span>
-                                                        <span class="flag flag-pl" title="Poland" data-tooltip="" tabindex="1"></span>
-
-                            Wisla Krakow
-                            <span class="elo">
-                                1086
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                42
-                            </span>
-                                                        <span class="flag flag-eu" title="Europe" data-tooltip="" tabindex="1"></span>
-
-                            Movistar Riders
-                            <span class="elo">
-                                1084
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                43
-                            </span>
-                                                        <span class="flag flag-au" title="Australia" data-tooltip="" tabindex="1"></span>
-
-                            Rooster
-                            <span class="elo">
-                                1077
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                44
-                            </span>
-                                                        <span class="flag flag-fr" title="France" data-tooltip="" tabindex="1"></span>
-
-                            Team LDLC
-                            <span class="elo">
-                                1075
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                45
-                            </span>
-                                                        <span class="flag flag-br" title="Brazil" data-tooltip="" tabindex="1"></span>
-
-                            paiN Gaming
-                            <span class="elo">
-                                1069
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-down ">
-                        <a href="rankings/team-details/29956.html">
-                            <span class="ranking">
-                                46
-                            </span>
-                                                        <span class="flag flag-br" title="Brazil" data-tooltip="" tabindex="1"></span>
-
-                            MIBR
-                            <span class="elo">
-                                1068
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                47
-                            </span>
-                                                        <span class="flag flag-dk" title="Denmark" data-tooltip="" tabindex="1"></span>
-
-                            Copenhagen Flames
-                            <span class="elo">
-                                1067
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                48
-                            </span>
-                                                        <span class="flag flag-se" title="Sweden" data-tooltip="" tabindex="1"></span>
-
-                            fnatic
-                            <span class="elo">
-                                1065
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                49
-                            </span>
-                                                        <span class="flag flag-se" title="Sweden" data-tooltip="" tabindex="1"></span>
-
-                            Dignitas
-                            <span class="elo">
-                                1059
-                            </span>
-                        </a>
-                    </li>
-                                                                                                                                                                    <li class="rank-up ">
-                        <a href="rankings-1.html">
-                            <span class="ranking">
-                                50
-                            </span>
-                                                        <span class="flag flag-br" title="Brazil" data-tooltip="" tabindex="1"></span>
-
-                            Sharks Esports
-                            <span class="elo">
-                                1057
-                            </span>
-                        </a>
-                    </li>
-                            </ul>
-                
-    
-                    
-                
-                
-                
-        
-        
-        
-        
-        <ul role="navigation" aria-label="Pagination" data-load-target="#rankingsList" class="pagination">
-                            <li class="pagination-previous disabled">
-                    <span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
-                </li>
-            
-                        <li class="current">
-                <span class="show-for-sr">You're on page</span>
-                1
-            </li>
-            
-                                                                <li>
-                                                <a href="rankings/list-16.html?maxResults=50&amp;page=2" aria-label="Page 2">
-                            2
-                        </a>
-                    </li>
-                
-                                    <li class="ellipsis" aria-hidden="true"></li>
-                
-                                    <li>
-                                                <a href="rankings/list-17.html?maxResults=50&amp;page=13" aria-label="Page 13">
-                            13
-                        </a>
-                    </li>
-                                
-                <li class="pagination-next">
-                                        <a href="rankings/list-16.html?maxResults=50&amp;page=2" aria-label="Next page">
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </li>
-                    </ul>
-    
-        </div>
-    </div>
-            <div class="large-6 columns" id="rankDetails" data-scroll-into-view="" data-scroll-top="100">
-            
-    
-
-<section class="team-info module row">
-    <div class="rank-info">
-        <div class="team-rating">
-            <small>
-                Rating            </small>
-            1,515
-        </div>
-        <div>
-            <strong>1</strong>
-            <div>
-                World                <small>Ranking</small>
-            </div>
-        </div>
-                    <div>
-                <strong>1</strong>
-                <div>
-                    CIS                    <small>Ranking</small>
-                </div>
-            </div>
-            </div>
-    <div class="team-profile">
-        <a href="/counterstrike/teams/14346-gambit-esports" class="avatar" style="background-image:url('../100x100/a3/60/0c/72a511a0aa24a671cc03492128b92b62ddeacffa85c2f4cf9b0e3b6d36.png');">
-        </a>
-        <div class="region">
-            <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-        </div>
-        <a href="/counterstrike/teams/14346-gambit-esports">
-            <h3>Gambit Esports</h3>
-        </a>
-        <div class="rank-earnings">
-            <small>Total prize money earned:</small>
-                            <span>
-                    $2,434,486
-                </span>
-                    </div>
-    </div>
-
-    <div class="ranking-stats">
-        <table class="ranking-table">
-            <thead>
-                <tr>
-                    <th>Statistics</th>
-                                                                        <th class="text-center">
-                                May                            </th>
-                                                    <th class="text-center">
-                                June                            </th>
-                                                                                        <th class="text-center">
-                            All time                        </th>
-                                    </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>
-                        Win rate                    </th>
-                                                                        <td class="text-center">
-                                75%
-                            </td>
-                                                    <td class="text-center">
-                                91%
-                            </td>
-                                                                                        <td class="text-center">
-                            58%
-                        </td>
-                                    </tr>
-                <tr>
-                    <th>
-                        Matches played                    </th>
-                                                                        <td class="text-center">
-                                <span class="win">9</span> /
-                                <span class="draw">0</span> /
-                                <span class="loss">3</span>
-                            </td>
-                                                    <td class="text-center">
-                                <span class="win">10</span> /
-                                <span class="draw">0</span> /
-                                <span class="loss">1</span>
-                            </td>
-                                                                                        <td class="text-center">
-                            <span class="win">263</span> /
-                            <span class="draw">10</span> /
-                            <span class="loss">183</span>
-                        </td>
-                                    </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>
-                        Current streak                    </th>
-                                            <td class="text-right win" colspan="3">
-                            9 wins in a row                        </td>
-                                    </tr>
-            </tfoot>
-        </table>
-    </div>
-
-</section>
-
-
-<section class="game-graphs row">
-    <div class="large-15 columns">
-        <div class="graph row">
-            <canvas id="rankingsGraph"></canvas>
-            <div class="columns">
-                <div class="row previous-matches">
-                    <ul>
-                                                                                <li class="match live">
-                                <a href="/counterstrike/tournaments/42574-blast-premier-spring-2021/matches/423316-gambit-esports-vs-natus-vincere">
-                                    vs
-                                    <div class="avatar" style="background-image:url('../30x30/c5/01/42/5a3f694e5399d94cdced2f962cee633874ca936b0a850222879490fd31.png');">
-                                    </div>
-                                    Natus Vincere
-                                                                            <span class="win">
-                                            2 : 0
-                                        </span>
-                                                                    </a>
-                            </li>
-                                                                                <li class="match live">
-                                <a href="/counterstrike/tournaments/42574-blast-premier-spring-2021/matches/423309-gambit-esports-vs-natus-vincere">
-                                    vs
-                                    <div class="avatar" style="background-image:url('../30x30/c5/01/42/5a3f694e5399d94cdced2f962cee633874ca936b0a850222879490fd31.png');">
-                                    </div>
-                                    Natus Vincere
-                                                                            <span class="win">
-                                            2 : 1
-                                        </span>
-                                                                    </a>
-                            </li>
-                                                                                <li class="match live">
-                                <a href="/counterstrike/tournaments/42574-blast-premier-spring-2021/matches/423307-gambit-esports-vs-complexity-gaming">
-                                    vs
-                                    <div class="avatar" style="background-image:url('../30x30/1a/57/2b/fddacabcfd4c62aa521ececf64ad3bd6d5236f038d66e2499db714424a.png');">
-                                    </div>
-                                    compLexity Gaming
-                                                                            <span class="win">
-                                            2 : 0
-                                        </span>
-                                                                    </a>
-                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-    window.rankingsGraphData = {"images":[{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/2a\/7b\/27\/d1e8049682d44dbbf5d8f48776327713a4d4d91e8ef7f0e9cacc3e4c93.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/fa\/36\/35\/eaafa2fb2812140a5089e2faf92fa2fda7ffa934cfc3adb039cba73a71.png"},{"result":"loss","image":"https:\/\/static.gosugamers.net\/16x16\/9d\/89\/81\/185814519fcec9631ef559e8ee1a7309e7ce428ec7e0aaa44a9d6ecf2d.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/11\/fc\/5f\/5a9885180800f7d55cb79c481fe9807db09972f19bb871619006b2bca7.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/1a\/57\/2b\/fddacabcfd4c62aa521ececf64ad3bd6d5236f038d66e2499db714424a.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/2f\/69\/fa\/747f494e3bee3de770a8d6199f5495013d6a80a59153d54144f87ab0ce.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/d1\/de\/96\/f356e51ec90e4ff76b86472cb185e3352510d7e9f314db9d521d33ada4.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/ae\/0b\/d4\/9ef6837ce7ec78319413bebdb3116b8114eb488bf0e7718742ee9041fc.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/2f\/69\/fa\/747f494e3bee3de770a8d6199f5495013d6a80a59153d54144f87ab0ce.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/1a\/57\/2b\/fddacabcfd4c62aa521ececf64ad3bd6d5236f038d66e2499db714424a.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/c5\/01\/42\/5a3f694e5399d94cdced2f962cee633874ca936b0a850222879490fd31.png"},{"result":"win","image":"https:\/\/static.gosugamers.net\/16x16\/c5\/01\/42\/5a3f694e5399d94cdced2f962cee633874ca936b0a850222879490fd31.png"}],"points":[1448,1453,1425,1436,1443,1449,1464,1473,1478,1486,1501,1515],"tooltips":[{"tournament":"EPIC CIS League Spring 2021","stage":"Main Event","dateTime":"2021-05-30T19:00:00+02:00","opponent":"Virtus.pro","rating":1448,"ratingChange":11,"ratingText":"Gained 11 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-03T12:00:00+02:00","opponent":"Sprout","rating":1453,"ratingChange":5,"ratingText":"Gained 5 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-03T16:40:00+02:00","opponent":"Team Vitality","rating":1425,"ratingChange":-28,"ratingText":"Lost 28 rating","result":"loss"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-04T21:00:00+02:00","opponent":"Astralis","rating":1436,"ratingChange":11,"ratingText":"Gained 11 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-05T20:30:00+02:00","opponent":"compLexity Gaming","rating":1443,"ratingChange":7,"ratingText":"Gained 7 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-11T20:00:00+02:00","opponent":"Evil Geniuses","rating":1449,"ratingChange":6,"ratingText":"Gained 6 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-12T20:45:00+02:00","opponent":"G2 Esports","rating":1464,"ratingChange":15,"ratingText":"Gained 15 rating","result":"win"},{"tournament":"Intel Extreme Masters Season XVI - Summer","stage":"Main Event","dateTime":"2021-06-13T16:00:00+02:00","opponent":"OG","rating":1473,"ratingChange":9,"ratingText":"Gained 9 rating","result":"win"},{"tournament":"BLAST Premier: Spring 2021","stage":"Finals","dateTime":"2021-06-15T15:30:00+02:00","opponent":"Evil Geniuses","rating":1478,"ratingChange":5,"ratingText":"Gained 5 rating","result":"win"},{"tournament":"BLAST Premier: Spring 2021","stage":"Finals","dateTime":"2021-06-17T16:15:00+02:00","opponent":"compLexity Gaming","rating":1486,"ratingChange":8,"ratingText":"Gained 8 rating","result":"win"},{"tournament":"BLAST Premier: Spring 2021","stage":"Finals","dateTime":"2021-06-19T15:30:00+02:00","opponent":"Natus Vincere","rating":1501,"ratingChange":15,"ratingText":"Gained 15 rating","result":"win"},{"tournament":"BLAST Premier: Spring 2021","stage":"Finals","dateTime":"2021-06-20T19:30:00+02:00","opponent":"Natus Vincere","rating":1515,"ratingChange":14,"ratingText":"Gained 14 rating","result":"win"}]};
-
-    window.strings = Object.assign(
-        {},
-        window.strings,
-        {
-            dueToInactivity: "due to inactivity",
-            ratingDecay: "Rating decay"
-        }
-    );
-</script>
-
-    
-<section class="team-roster module row small-up-1 medium-up-2 large-up-3">
-    <h3>Roster</h3>
-                <div class="column participant column-block">
-            <div class="row">
-                                <a href="/counterstrike/players/113498-hobbitt" class="player member">
-                                        <div class="avatar" style="background-image:url('../80x80/ed/3e/f6/90b2bdebd08dfe7fdfac61f4158a4be43c6af5a70267337b9ef3e30dd1.jpeg');">
-                    </div>
-                    <div class="region">
-                        <span class="flag flag-kz" title="Kazakhstan" data-tooltip="" tabindex="1"></span>
-
-                    </div>
-                    <div class="name">
-                        HObbitt
-                    </div>
-                </a>
-            </div>
-        </div>
-                <div class="column participant column-block">
-            <div class="row">
-                                <a href="/counterstrike/players/195366-interz" class="player member">
-                                        <div class="avatar" style="background-image:url('../80x80/26/ce/84/80f37dce47959918fc1dded042beeb96340fd9edee655b60886f098bfb.jpg');">
-                    </div>
-                    <div class="region">
-                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                    </div>
-                    <div class="name">
-                        interz
-                    </div>
-                </a>
-            </div>
-        </div>
-                <div class="column participant column-block">
-            <div class="row">
-                                <a href="/counterstrike/players/237022-ax1le" class="player member">
-                                        <div class="avatar" style="background-image:url('../80x80/26/ce/84/80f37dce47959918fc1dded042beeb96340fd9edee655b60886f098bfb.jpg');">
-                    </div>
-                    <div class="region">
-                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                    </div>
-                    <div class="name">
-                        Ax1Le
-                    </div>
-                </a>
-            </div>
-        </div>
-                <div class="column participant column-block">
-            <div class="row">
-                                <a href="/counterstrike/players/243395-sh1ro" class="player member">
-                                        <div class="avatar" style="background-image:url('../80x80/26/ce/84/80f37dce47959918fc1dded042beeb96340fd9edee655b60886f098bfb.jpg');">
-                    </div>
-                    <div class="region">
-                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                    </div>
-                    <div class="name">
-                        sh1ro
-                    </div>
-                </a>
-            </div>
-        </div>
-                <div class="column participant column-block">
-            <div class="row">
-                                <a href="/counterstrike/players/244427-nafany" class="player member">
-                                        <div class="avatar" style="background-image:url('../80x80/26/ce/84/80f37dce47959918fc1dded042beeb96340fd9edee655b60886f098bfb.jpg');">
-                    </div>
-                    <div class="region">
-                        <span class="flag flag-ru" title="Russian Federation" data-tooltip="" tabindex="1"></span>
-
-                    </div>
-                    <div class="name">
-                        nafany
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-        </div>
-    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="large-4 columns">
-            
-
-<div class="row">
-    <div class="large-15 columns">
-        <section class="module main-settings row">
-            <h3>CS:GO rankings filter</h3>
-            <form action="/counterstrike/rankings/list" data-submit-target="#rankingsList">
-                    
-    
-    <label class="">
-                    <span>
-                team name
-                            </span>
-                    
-    <input type="text" name="opponentName" value="">
-
-            
-    </label>
-    
-                <button type="submit" class="green arrow button">Apply</button>
-            </form>
-        </section>
+        <div id="copy_tagline">
+            Представляем <b>«Запретную зону»</b>, стремительный игровой режим, объединяющий принципы королевской битвы и тактические механики CS:GO. Игрокам помогут лишь их навыки, смекалка&nbsp;и&nbsp;найденные ресурсы.        </div>
+        <div id="copy_subhead-a" class="subhead">
+            Добро пожаловать        </div>
+        <div id="copy_sub-a" class="sub">
+        Режим поддерживает до 18&nbsp;игроков. Ищите ресурсы, заказывайте самое нужное и&nbsp;всегда будьте готовы к&nbsp;неожиданностям.        </div>
+        <div id="copy_subhead-b" class="subhead">
+            Сражайся или беги        </div>
+        <div id="copy_sub-b" class="sub">
+            Проверяйте свой планшет, чтобы получать свежую информацию. Вам решать: напасть сейчас или выждать лучший для битвы момент.        </div>
+        <div id="copy_subhead-c" class="subhead">
+            Нельзя терять время        </div>
+        <div id="copy_sub-c" class="sub">
+            Проверьте свои навыки, используйте экипировку на&nbsp;полную, и пусть каждая секунда будет потрачена с&nbsp;умом.        </div>
+	</div>
+</div>
+
+<div id="bg_03">
+    <div id="container_03">
+        <div id="copy_03_01">
+        Добро пожаловать        </div>
+        <div id="copy_03_02">
+            Выберите место высадки. Изучите карту и откройте все её тайны.        </div>
     </div>
 </div>
 
-            <div class="box-container row">
-                    <div id="boxTopWrapper" class="box-top-wrapper">
-            <div id="slot-2">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-2"); });
-        </script>
+<div id="bg_04">
+    <div id="container_04">	
+        <div id="copy_04_01" class="copy_page">
+            Находите экипировку и деньги, а также особые грузы, которые сбрасывают с неба.        </div>
     </div>
-    </div>
+</div>
+
+
+<div id="bg_05">
+    <div id="container_05">
+        <div id="copy_05_01" class="copy_page">
+            Исследуйте окружение и&nbsp;выполняйте особые миссии, чтобы превзойти своих врагов.        </div>
+
+        <div id="mission_slider_container">
+            <div id="mission_slider">
+                <div id="mission_safe">
+                    <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/mission_safe.png"/>
+                    <div id="copy_05_02">
+                        В сейфе лежит наличка. Жаль,&nbsp;что шифра от него нет, но&nbsp;чем C4 — не решение?                    </div>
+                </div>
+                <div id="mission_hostage">
+                    <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/mission_hostage.png?v=2"/>
+                    <div id="copy_05_02">
+                        Принесите заложника в зону эвакуации и получите денежное вознаграждение.                    </div>
+                </div>
+                <div id="mission_case">
+                    <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/mission_case.png"/>
+                    <div id="copy_05_02">
+                        Контракты дают вам дополнительные деньги за&nbsp;убийство ценной цели.                    </div>
+                </div>
             </div>
-            <section class="module matchticker row">
-    <h3 class="float-left">Matchticker</h3>
-    <ul class="tabs float-right" data-load-target=".matchticker .tabs-content ul">
-        <li class="tabs-title is-active">
-                        <a href="/counterstrike/matchticker/upcoming" id="matchtickerUpcomingTab" aria-selected="true">
-                Schedule            </a>
-        </li>
-        <li class="tabs-title">
-                        <a href="/counterstrike/matchticker/results" id="matchtickerResultsTab">
-                Results            </a>
-        </li>
-    </ul>
-    <div class="tabs-content">
-        <div class="tabs-panel scrollbar-macosx is-active">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-    </div>
-            <a href="/counterstrike/matches" class="view-more sliding secondary button expanded">
-        All matches    </a>
-    </section>
-            <div class="box-container row">
-                    <div id="boxBottomWrapper" class="box-bottom-wrapper">
-            <div id="slot-3">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-3"); });
-        </script>
-    </div>
-    </div>
-            </div>
+    
+        <div class="controls" id="mission_slider_next" href=""></div>
+        <div class="controls" id="mission_slider_prev" href=""></div>
+		      
         </div>
     </div>
 </div>
 
-        </main>
-
-        <footer class="row">
-    <div class="large-15 columns">
-        <div class="module btf-horizontal row">
-                <div id="footerWrapper" class="footer-wrapper">
-            <div id="slot-4">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-4"); });
-        </script>
-    </div>
-    </div>
-        </div>
-        <div class="module hide-for-small-only footer-social row">
-            <div class="medium-12 large-6 columns">
-                <div class="row">
-                    <h3>Never miss esports</h3>
-                </div>
-            </div>
-            <div class="medium-5 large-3 columns">
-                <div class="row">
-                    <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                    <ul>
-                        <li>
-                            <a href="../GosuGamers.html" data-ga-category="Social Link" data-ga-label="Twitter">
-                                @GosuGamers
-                            </a>
-                        </li>
-                        <li><a href="../GosuGamersDota.html">@GosuGamersDota</a></li>
-                        <li><a href="../GosuGamersCS.html">@GosuGamersCS</a></li>
-                        <li><a href="../GosuGamersLoL.html">@GosuGamersLoL</a></li>
-                        <li><a href="../GosuOverwatch.html">@GosuOverwatch</a></li>
-                        <li><a href="../GosuGamersSC2.html">@GosuGamersSC2</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="medium-5 large-3 columns">
-                <div class="row">
-                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
-                    <ul>
-                        <li>
-                            <a href="../user/gosugamersnet.html" data-ga-category="Social Link" data-ga-label="YouTube">
-                                All esports                            </a>
-                        </li>
-                        <li><a href="../channel/UCoUjFIMeWTlKNjhudS3Z0LA.html">Dota 2</a></li>
-                        <li><a href="../channel/UCPUWguROIgymefU0eh_t9kQ.html">CS:GO</a></li>
-                        <li><a href="../channel/UCltkwgxT9A7-2tBVFCbEFFQ.html">League of Legends</a></li>
-                        <li><a href="../channel/UCrQ_FZdtI0_CLEbAIxVXcHQ.html">Overwatch</a></li>
-                        <li><a href="../channel/UCoqY4uOxq3hqgKLTXRt35NQ.html">StarCraft 2</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="medium-5 large-3 columns">
-                <div class="row">
-                    <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                    <ul>
-                        <li>
-                            <a href="../GosuGamers-1.html" data-ga-category="Social Link" data-ga-label="Facebook">
-                                All esports                            </a>
-                        </li>
-                        <li><a href="../GosuGamersDota-1.html">Dota 2</a></li>
-                        <li><a href="../GosuGamersCS-1.html">CS:GO</a></li>
-                        <li><a href="../GosuGamersLoL-1.html">League of Legends</a></li>
-                        <li><a href="../login/index.htm">Overwatch</a></li>
-                        <li><a href="../login/index-1.htm">StarCraft 2</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="module footer-ggnet row">
-            <div class="medium-9 large-9 columns">
-                <div class="row">
-                    <a class="logo" href="/">
-                        <img src="../assets/images/app/site/logo/logo-d88597db.png">
-                    </a>
-                    <div class="about-text">
-                                                The world's biggest source of competitive gaming information. Our mission at GosuGamers
-                        is to deliver the highest quality esports content and coverage.
-                                            </div>
-                </div>
-            </div>
-            <div class="medium-6 large-4 columns">
-                <div class="text-center medium-text-right text-right row">
-                        <div id="footerBoxWrapper" class="footer-box-wrapper">
-            <div id="slot-5">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-5"); });
-        </script>
-    </div>
-    </div>
-                </div>
-            </div>
-        </div>
-        <div class="module show-for-large footer-site-map row">
-            <ul>
-                <li><h2>All esports</h2></li>
-                <li><a href="/articles">Articles</a></li>
-                <li><a href="/tournaments">Tournaments</a></li>
-                <li><a href="/matches">Matches</a></li>
-                <li><a href="/rankings">Rankings</a></li>
-                <li><a href="/streams">Streams</a></li>
-                <li><a href="/vods">VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>Dota 2</h2></li>
-                <li><a href="/dota2/articles">Dota 2 Articles</a></li>
-                <li><a href="/dota2/tournaments">Dota 2 Tournaments</a></li>
-                <li><a href="/dota2/matches">Dota 2 Matches</a></li>
-                <li><a href="/dota2/rankings">Dota 2 Rankings</a></li>
-                <li><a href="/dota2/streams">Dota 2 Streams</a></li>
-                <li><a href="/dota2/vods">Dota 2 VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>LoL</h2></li>
-                <li><a href="/lol/articles">LoL Articles</a></li>
-                <li><a href="/lol/tournaments">LoL Tournaments</a></li>
-                <li><a href="/lol/matches">LoL Matches</a></li>
-                <li><a href="/lol/rankings">LoL Rankings</a></li>
-                <li><a href="/lol/streams">LoL Streams</a></li>
-                <li><a href="/lol/vods">LoL VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>CS:GO</h2></li>
-                <li><a href="/counterstrike/articles">CS:GO Articles</a></li>
-                <li><a href="/counterstrike/tournaments">CS:GO Tournaments</a></li>
-                <li><a href="/counterstrike/matches">CS:GO Matches</a></li>
-                <li><a href="rankings-1.html">CS:GO Rankings</a></li>
-                <li><a href="/counterstrike/streams">CS:GO Streams</a></li>
-                <li><a href="/counterstrike/vods">CS:GO VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>Overwatch</h2></li>
-                <li><a href="/overwatch/articles">OW Articles</a></li>
-                <li><a href="/overwatch/tournaments">OW Tournaments</a></li>
-                <li><a href="/overwatch/matches">OW Matches</a></li>
-                <li><a href="/overwatch/rankings">OW Rankings</a></li>
-                <li><a href="/overwatch/streams">OW Streams</a></li>
-                <li><a href="/overwatch/vods">OW VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>StarCraft 2</h2></li>
-                <li><a href="/starcraft2/articles">SC2 Articles</a></li>
-                <li><a href="/starcraft2/tournaments">SC2 Tournaments</a></li>
-                <li><a href="/starcraft2/matches">SC2 Matches</a></li>
-                <li><a href="/starcraft2/rankings">SC2 Rankings</a></li>
-                <li><a href="/starcraft2/streams">SC2 Streams</a></li>
-                <li><a href="/starcraft2/vods">SC2 VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>Valorant</h2></li>
-                <li><a href="/valorant/articles">Valorant Articles</a></li>
-                <li><a href="/valorant/tournaments">Valorant Tournaments</a></li>
-                <li><a href="/valorant/matches">Valorant Matches</a></li>
-                <li><a href="/valorant/rankings">Valorant Rankings</a></li>
-                <li><a href="/valorant/streams">Valorant Streams</a></li>
-                <li><a href="/valorant/vods">Valorant VODs</a></li>
-            </ul>
-            <ul>
-                <li><h2>Mobile Legends</h2></li>
-                <li><a href="/mobile-legends/articles">MLBB Articles</a></li>
-                <li><a href="/mobile-legends/tournaments">MLBB Tournaments</a></li>
-                <li><a href="/mobile-legends/matches">MLBB Matches</a></li>
-                <li><a href="/mobile-legends/streams">MLBB Streams</a></li>
-                <li><a href="/mobile-legends/vods">MLBB VODs</a></li>
-            </ul>
-        </div>
-        <div class="module footer row">
-            <div class="medium-11 columns">
-                <div class="text-center medium-text-left row">
-                    <ul>
-                        <li><a href="/jobs">Jobs</a></li>
-                        <li><a href="../index.htm">Advertise</a></li>
-                    </ul>
-                </div>
-                <div class="text-center medium-text-left row">
-                    <span>
-                        Copyright &copy;  2002 -  2021 GosuGamers.net. All rights reserved.                    </span>
-                    <ul>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Use</a></li>
-                        <li><a href="/support">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="medium-4 columns">
-                <div class="text-center medium-text-right row">
-                    <div>
-                        <span class="powered-by-steam">Powered by Steam</span>
-                        <a href="../index-1.htm" class="steam-logo" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<div id="cookieBar" class="cookies module hide">
-    <i class="icon-cookie"></i>
-    <span>This website uses cookies to ensure that you get the best experience</span>
-    <button id="acceptCookies" class="button">Accept</button>
-    <a href="/privacy" class="underline">Read more</a>
+<div id="bg_06">
+    <div id="container_06">
+        <div id="copy_06_01">
+            Сражайся или беги        </div>
+        <div id="copy_06_02" class="copy_page">
+            Ваш планшет — ключ к выживанию. Отслеживайте позиции врагов, следите за доставкой ваших покупок и планируйте свой путь, чтобы&nbsp;не попасть в запретную зону.        </div>
+	</div>
 </div>
-    </div>
 
-        <div class="ad-placement"></div>
-
-        <script>window.fallbackAds = {"headerWrapper":{"image":"https:\/\/static.gosugamers.net\/e4\/5c\/82\/bf7bf01c44bf512a5d7e240bab33c7ff56b7fbc20f17188d6f6ff9497c.jpg","url":"","label":"leaderboard ad shown at the top of the page","enabled":true},"boxTopWrapper":{"image":"https:\/\/static.gosugamers.net\/7d\/8d\/a6\/398ffd9cf03e9e6fd8db97e6b31d22885a1042971e7d966d730bcee11b.jpg","url":"https:\/\/twitter.com\/GosuGamers","label":"top box ad","enabled":true},"boxBottomWrapper":{"image":"https:\/\/static.gosugamers.net\/af\/1d\/48\/27d8db04fd148e724e47367874c4d665b67eb8342ab85b28cd1f1d127d.jpg","url":"https:\/\/www.facebook.com\/GosuGamers\/","label":"bottom box ad","enabled":true},"midsectionWrapper":{"image":"https:\/\/static.gosugamers.net\/e4\/5c\/82\/bf7bf01c44bf512a5d7e240bab33c7ff56b7fbc20f17188d6f6ff9497c.jpg","url":"","label":"midsection ad","enabled":true},"footerWrapper":{"image":"https:\/\/static.gosugamers.net\/e4\/5c\/82\/bf7bf01c44bf512a5d7e240bab33c7ff56b7fbc20f17188d6f6ff9497c.jpg","url":"","label":"leaderboard ad shown in footer","enabled":true},"footerBoxWrapper":{"image":"https:\/\/static.gosugamers.net\/8e\/2d\/56\/7fa0d283987a331e9cddc0edfe18edd7d28d59406f9e3d908e926e1a2b.png","url":"","label":"box ad shown in footer","enabled":true}};</script>
-
-    <div class="site-skin">
-            <div id="siteSkinWrapper" class="site-skin-wrapper">
-            <div id="slot-6">
-        <script>
-            googletag.cmd.push(function() { googletag.display("slot-6"); });
-        </script>
-    </div>
-    </div>
-    </div>
-
-    <div id="outOfPageWrapper" class="out-of-page-wrapper"></div>
-
-    <script>
-        window.adsEnabled = true;
-        window.rollbarConfig = null;
-        window.siteSectionId = 13;
-
-        // Translated strings for use in JavaScript.
-        window.globalStrings = {
-            closeDialogueBox: "Close dialogue box",
-            unexpectedError: "An unexpected error occurred. Please try again later."
-        };
-    </script>
-
+<div id="bg_07">
+    <div id="container_07">
+    <div id="tablet_slider_container">
+        <div id="tablet_slider">
+            <div id="tablet_buy">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/tablet_buy.png"/>
+                <div id="copy_07_01" class="copy_page">
+                    Каждый раунд отличается от предыдущего. Проверяйте предложения магазина и снарядитесь лучше своих врагов.                </div>
+            </div>
+            <div id="tablet_map">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/tablet_map.png"/>
+                <div id="copy_07_02" class="copy_page">
+                    Вся информация в ваших руках. Используйте данные планшета, чтобы найти врага или отступить в безопасное место.                </div>
+            </div>
+            <div id="tablet_zone">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/tablet_zone.png"/>
+                <div id="copy_07_03" class="copy_page">
+                    Улучшите свой планшет, чтобы более подробно видеть&nbsp;приближение запретной зоны...                </div>
+            </div>
+            <div id="tablet_drone">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/tablet_drone.png"/>
+                <div id="copy_07_03" class="copy_page">
+                    ...отслеживать доставку заказов врага...                </div>
+            </div>
+            <div id="tablet_hires">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/tablet_hires.png"/>
+                <div id="copy_07_03" class="copy_page">
+                    ...или позиции самого врага, чтобы устранить его.                </div>
+            </div>
     
-    </body>
+        </div>
+    
+        <div class="controls" id="tablet_slider_next" href=""></div>
+        <div class="controls" id="tablet_slider_prev" href=""></div>
+		      
+    </div>
+        
+        
+        
+        
+
+    </div>
+</div>
+
+<div id="bg_08">
+    <div id="container_08">
+        <div id="copy_08_01" class="copy_page">
+            Дроны-курьеры иногда могут быть сами себе на уме, но&nbsp;вне помещений они всегда найдут вас в час нужды.        </div>
+    </div>
+</div>
+
+<div id="bg_09">
+    <div id="container_09">
+        <div id="copy_09_01">
+            Новые&nbsp;друзья&nbsp;и&nbsp;старые&nbsp;знакомые        </div>
+        <div id="copy_09_02" class="copy_page">
+            В каждой игре вас ждёт привычный арсенал CS:GO: пистолеты, винтовки, пистолеты-пулемёты и тяжёлое&nbsp;вооружение.        </div>
+    </div>
+</div>
+
+<div id="bg_10">
+    <div id="container_10">
+        <div id="copy_10_01" class="copy_page">
+            Ресурсов очень мало. Доверьтесь&nbsp;первому найденному оружию или думайте, как&nbsp;раздобыть что помощнее. Каждый патрон на счету.        </div>
+        <div id="copy_10_02" class="copy_page">
+            Со смекалкой используйте пробивные снаряды, бомбы C4, метательное оружие и&nbsp;многое&nbsp;другое.        </div>
+    </div>
+</div>
+
+
+<div id="bg_11">
+    <div id="container_11">
+        <div id="copy_11_01" class="copy_page">
+            Медшприц поможет быстро восстановить силы и вернуться в&nbsp;бой. Следите за своим здоровьем, если хотите победить.        </div>
+        <div id="copy_11_02">
+            Использование медшприца также ненадолго ускоряет передвижение, позволяя сбежать от врага.        </div>
+    </div>
+</div>
+
+
+
+<div id="bg_12">
+    <div id="container_12">
+        <div id="copy_12_01">
+            В одиночку, вдвоём или втроём        </div>
+        <div id="copy_12_02" class="copy_page">
+            В запретную зону можно играть одному, а можно взять друга (или двух) и охотиться (или выживать) командой.        </div>
+        <div id="copy_12_03"  class="copy_page">
+            И это ещё не всё. Мы&nbsp;продолжим улучшать этот&nbsp;режим, прислушиваясь к&nbsp;отзывам нашего сообщества.        </div>
+    </div>
+</div>
+
+<div id="bg_13">
+    <div id="container_13">
+        <div id="copy_13_01">
+            Ограниченная акция!        </div>
+        <div id="copy_13_02"  class="copy_page">
+            Подключите прайм-статус, играйте в режим «Запретная зона» и получите награду: Сувенирный MP5-SD | Подопытные крысы.        </div>
+    </div>
+</div>
+
+<div id="bg_14">
+    <div id="container_14">
+    <div id="copy_14_01">
+    <a name="dangerzone_collection">
+        <a id="case">Представляем кейс «Запретная зона»</a>
+        </div>
+        <div id="copy_14_02" class="copy_page">
+            Этот кейс содержит 17 раскрасок оружия, созданных сообществом, и ножи из коллекции «Горизонт».        </div>
+
+        <div id="dzcase_slider_container">
+            <div id="dzcase_slider">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/01.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/02.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/03.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/04.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/05.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/06.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/07.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/08.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/09.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/10.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/11.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/12.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/13.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/14.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/15.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/16.png"/>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/dangerzone/collection/17.png"/>
+            </div>
+    
+            <div class="controls" id="dzcase_slider_next" href=""></div>
+            <div class="controls" id="dzcase_slider_prev" href=""></div>
+                
+        </div>
+
+    </div>
+</div>
+
+<div id="bg_15">
+    <div id="container_15">
+    </div>
+</div>
+
+<div id="bg_faq">
+    <div id="container_faq">
+        <div id="faq_container">
+            <div id="copy_faq_01">
+                Частые вопросы            </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <span class="faq_question">Сколько игроков может быть в матче?</span>
+            <br><br>Если вы ищете игру в одиночку, в матче будут участвовать 16 игроков. Если&nbsp;отрядом из двух или трёх человек — в матче будет 18 игроков.            
+            <br><br><br>
+            <span class="faq_question">Как играть в отряде?</span>
+            <br><br>Вы можете играть с друзьями, собравшись группой в главном меню. Запустив поиск «Запретной зоны» отрядом, вы найдёте матч с&nbsp;точно&nbsp;такими&nbsp;же отрядами.            
+            <br><br><br>
+            <span class="faq_question">Сколько длятся матчи?</span>
+            <br><br>Обычно матчи «Запретной зоны» длятся около 10 минут.            
+            <br><br><br>
+            <span class="faq_question">Поменялось ли привычное оружие из других режимов CS:GO?</span>
+            <br><br>Нет. В «Запретной зоне» у оружия такие же характеристики, что и в других режимах CS:GO. Однако не стоит забывать, что игроки в «Запретной зоне» изначально имеют 120 здоровья, а значит они могут пережить ранения, которые в других режимах привели бы к смерти.         
+            <br><br><br>
+            <span class="faq_question">Получаю ли я опыт, играя в этот режим?</span>
+            <br><br>Да. Играя в «Запретную зону», вы получаете опыт за убийство противников, нахождение предметов и просто попытку прожить как можно дольше.    
+            <br><br><br>
+            <span class="faq_question">Как получить награду ограниченной акции?</span>
+            <br><br>Чтобы получить награду ограниченной акции, вам нужно включить на&nbsp;своём аккаунте прайм-статус и заработать 250 опыта, играя в режиме «Запретная зона». Награду можно получить до 9 января 2019.        
+       
+        </div>
+    </div>
+</div>
+
+<div id="bg_bot">
+    <div id="container_bot">
+        	
+    </div>
+</div>
+
+
+</body>
 </html>
